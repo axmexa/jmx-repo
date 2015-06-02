@@ -54,6 +54,7 @@
 
 	spring-two/src/main/resources/META-INF/spring/consumer-jms-context.xml
 где
+
 	<jms:listener-container>
 
 содержит названия очередей брокера, сообщения с которых он будет получать. 
