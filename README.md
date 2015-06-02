@@ -50,6 +50,9 @@
 
     $ mvn -Pconsumer clean package
 	
+### Конфигурация агента описана в
 
+	spring-two/src/main/resources/META-INF/spring/consumer-jms-context.xml
 
-
+<jms:listener-container> содержит названия очередей брокера, сообщения с которых он будет получать. 
+Каждой очереди соответствует свой поток.
