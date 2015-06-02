@@ -1,0 +1,13 @@
+# For STS/Eclipse 
+.classpath
+.project
+.settings
+.springBeans
+Servers 
+bin
+
+# Maven 
+target
+
+# Logging 
+*.log
