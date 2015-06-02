@@ -1,0 +1,14 @@
+ru\axmexa\spring\jms\producer\SimpleMessageProducer$2.class
+ru\axmexa\spring\jms\listener\ScriptRunnerFile.class
+ru\axmexa\spring\jms\producer\SimpleMessageProducer$1.class
+ru\axmexa\spring\jms\listener\SimpleMessageListener.class
+ru\axmexa\spring\jms\listener\ScriptRunnerText.class
+ru\axmexa\spring\jms\listener\MessageMaker.class
+ru\axmexa\spring\jms\producer\SimpleMessageProducer.class
+ru\axmexa\spring\jms\listener\MySessionAwareMessageListener.class
+ru\axmexa\spring\jms\listener\ScriptRunner.class
+ru\axmexa\spring\jms\listener\MessageUtil.class
+ru\axmexa\spring\jms\ConsumerApp.class
+ru\axmexa\spring\jms\listener\StopConsumerException.class
+ru\axmexa\spring\jms\producer\SimpleMessageProducer$3.class
+ru\axmexa\spring\jms\ProducerApp.class

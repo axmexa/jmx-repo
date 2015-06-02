@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:jms="http://www.springframework.org/schema/jms"
+  xmlns:p="http://www.springframework.org/schema/p"
+  xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms.xsd">
+
+  <bean id="connectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory"
+    p:brokerURL="tcp://localhost:61616" />
+  
+  <bean id="destination" class="org.apache.activemq.command.ActiveMQQueue">
+    <constructor-arg value="TEST31" />
+  </bean>
+    
+  <bean id="replyToDestination" class="org.apache.activemq.command.ActiveMQQueue">
+    <constructor-arg value="TEST31.REPLY" />
+  </bean>
+    
+  <bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate"
+    p:connectionFactory-ref="connectionFactory"
+    p:defaultDestination-ref="destination" />
+  
+  <!-- 
+    Send messages that have the replyTo header set so that we know where to listen 
+    for response messages. 
+  -->
+  <bean id="messageProducer" class="ru.axmexa.spring.jms.producer.SimpleMessageProducer"
+    p:jmsTemplate-ref="jmsTemplate" p:replyToDestination-ref="replyToDestination" />
+    
+  <bean id="messageListener" class="ru.axmexa.spring.jms.listener.SimpleMessageListener" />
+    
+  <!-- 
+    Use the Spring DefaultMessageListenerContainer and the SimpleMessageListener to 
+    listen for the response messages.
+  -->
+  <jms:listener-container>
+    <jms:listener destination="TEST31.REPLY" ref="messageListener"/>
+  </jms:listener-container>
+  
+</beans>

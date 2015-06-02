@@ -1,0 +1,11 @@
+D:\workspace2\spring-two\src\main\java\ru\axmexa\spring\jms\listener\ScriptRunnerFile.java
+D:\workspace2\spring-two\src\main\java\ru\axmexa\spring\jms\listener\ScriptRunnerText.java
+D:\workspace2\spring-two\src\main\java\ru\axmexa\spring\jms\listener\ScriptRunner.java
+D:\workspace2\spring-two\src\main\java\ru\axmexa\spring\jms\ConsumerApp.java
+D:\workspace2\spring-two\src\main\java\ru\axmexa\spring\jms\ProducerApp.java
+D:\workspace2\spring-two\src\main\java\ru\axmexa\spring\jms\listener\MySessionAwareMessageListener.java
+D:\workspace2\spring-two\src\main\java\ru\axmexa\spring\jms\producer\SimpleMessageProducer.java
+D:\workspace2\spring-two\src\main\java\ru\axmexa\spring\jms\listener\MessageMaker.java
+D:\workspace2\spring-two\src\main\java\ru\axmexa\spring\jms\listener\SimpleMessageListener.java
+D:\workspace2\spring-two\src\main\java\ru\axmexa\spring\jms\listener\MessageUtil.java
+D:\workspace2\spring-two\src\main\java\ru\axmexa\spring\jms\listener\StopConsumerException.java
