@@ -1,3 +1,6 @@
+
+<blockquote>asdfsadfasdf</blockquote>
+
 # agent
 
 Разработать приложение, обеспечивающее прием и выполнение perl­скриптов из JMS­брокера.
